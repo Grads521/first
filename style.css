@@ -2,41 +2,45 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font: 14px 'PT Sans', Arial, Helvetica, sans-serif;
+  line-height: normal;
+  color: #2a2a2a;
+  background: #000 center 440px no-repeat;
+  height: 100%;
+  width: 100%;
+  font-weight: 400;
 }
 
-body {
-  width: 280px;
-  min-height: 280px;
-  padding: 10px;
-
-  font-size: 14px;
-  line-height: 1.4;
-  font-family: "Arial", sans-serif;
-
-  background-color: #ecf0f1;
-}
-
-.main-menu {
-  width: 200px;
-  margin: 0;
+.c-header.c-header--fixed {
+  position: fixed;
   padding: 0;
-  list-style: none;
-  margin-top:15px;
-
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
-.main-menu a {
+.top {
+  height: 70px;
+  background-color: #000;
+  z-index: 300;
+}
+
+.logo-box {
+  height: 70px;
+  width: 250px;
   display: block;
-  padding: 15px 15px;
-  text-decoration: none;
-  border-bottom: 2px solid #2c3e50;
-  background-color:#2980b9;
-  color:#ffffff;
-  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* background: url */
+  overflow: hidden;
+  text-indent: -1000px;
 }
 
-.main-menu .active a {
-  color: white;
-  background-color: #1abc9c;
-  border-bottom: 2px solid #2ecc71;
+.main-box {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
