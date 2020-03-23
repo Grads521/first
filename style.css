@@ -11,36 +11,125 @@ body {
   font-weight: 400;
 }
 
-.c-header.c-header--fixed {
-  position: fixed;
-  padding: 0;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-.top {
-  height: 70px;
-  background-color: #000;
-  z-index: 300;
-}
-
-.logo-box {
-  height: 70px;
-  width: 250px;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  /* background: url */
-  overflow: hidden;
-  text-indent: -1000px;
+.all-wrap {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .main-box {
-  width: 100%;
-  min-width: 320px;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top {
+    height: 70px;
+    background-color: #000;
+    position: relative;
+    z-index: 300;
+    padding: 0 250px;
+}
+
+/* HEADER
+-----------------------------------------------------*/
+
+.logo-box {
+    height: 70px;
+    width: 250px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/logo.png) no-repeat;
+    overflow: hidden;
+    text-indent: -1000px;
+}
+
+/* MAIN MENU
+----------------------------------------------- */
+
+.main-menu {
+    text-align: center;
+}
+
+.main-menu>li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.main-menu>li>a {
+    display: block;
+    line-height: 70px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.main-menu>li>a:hover {
+    color: #7f7679;
+}
+
+.main-menu>li>a i {
+    font-size: 18px;
+}
+
+.hidden-menu {
+    background-color: #fff;
+    padding: 20px 10px;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    right: -180px;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+}
+
+.hidden-menu li {
+    display: inline-block;
+    float: left;
+    width: 20%;
+}
+
+.hidden-menu li a {
+    color: #000;
+    display: block;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.hidden-menu li a:hover {
+    background-color: #151515;
+    color: #fff;
+}
+
+.alpha-sort {
+    padding: 20px 18px 15px 18px;
+    left: -250px;
+    right: -250px;
+}
+
+.alpha-sort a {
+    display: inline-block;
+    float: left;
+    margin: 0 0.2% 5px 0.2%;
+    width: 2.63%;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.alpha-sort a:hover {
+    background-color: #151515;
+    color: #000;
+    border: 1px solid #151515;
 }
