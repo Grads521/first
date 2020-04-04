@@ -12,13 +12,30 @@ body {
   margin: 0;
   /* padding-left: 300px; */
   /* padding-right: 600px; */
-  /* padding-top: 20px; */
-  /* padding-bottom: 20px; */
-  padding: 20px 600px 20px 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   list-style: none;
   border: 1px solid #e5e5e5;
   background-color: #050505;
 }
+
+.main-menu li:nth-child(1) {
+  padding-left: 40px;
+}
+
+.main-menu li:nth-child(2) {
+  padding-left: 130px;
+}
+
+.main-menu li:nth-child(6) {
+  padding-left: 100px;
+}
+
+.main-menu li:nth-child(8) {
+  padding-left: 100px;
+}
+
+
 
 .main-menu a {
   display: block;
@@ -31,4 +48,5 @@ body {
 .main-menu li {
   display: inline-block;
   margin-right: 5px;
+  vertical-align: middle;
 }
