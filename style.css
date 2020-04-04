@@ -50,3 +50,49 @@ body {
   margin-right: 5px;
   vertical-align: middle;
 }
+
+header {
+
+}
+
+main {
+  background-color: #444341;
+  height: 780px;
+}
+
+h1 {
+  padding-left: 80px;
+  color: #ffffff;
+  padding-top: 40px;
+  font-size: 40px;
+  line-height: 1.4;
+  font-family: "Arial", sans-serif;
+}
+
+h2 {
+  padding-left: 80px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "Arial", sans-serif;
+}
+
+main .zapis1 {
+  padding-left: 80px;
+  padding-top: 40px;
+  list-style: none;
+}
+
+main .zapis2 {
+  color: #ffffff;
+  padding: 10px 40px;
+  border: 2px solid #73634a;
+}
+
+main .group1 {
+  p
+}
+
+main .group2 {
+
+}
