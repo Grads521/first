@@ -1,14 +1,12 @@
-header {
+/* header {
   width: 1400px;
   font-size: 14px;
   line-height: 1.4;
   font-family: "Arial", sans-serif;
 }
 
-.main-menu {
+  .main-menu {
   margin: 0;
-  /* padding-left: 300px; */
-  /* padding-right: 600px; */
   padding-top: 5px;
   padding-bottom: 5px;
   list-style: none;
@@ -132,4 +130,4 @@ main .master5 {
 main .master6 {
   padding-left: 710px;
   padding-top: 100px;
-}
+} */
