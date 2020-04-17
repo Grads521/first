@@ -69,178 +69,191 @@
 }
 
 main {
-  position: relative;
-  background-color: #444341;
-  // TODO: у всех вложенных макро блоков должна быть ширина 100%
-  width: 1400px;
-  height: 7800px;
-.zapis1 {
-   padding-left: 100px;
-   padding-top: 80px;
-}
-.zapis2 {
-  color: #ffffff;
-  padding: 10px 40px;
-  border: 2px solid #D9B987;
-  font-family: "GothamPro1", Arial, sans-serif;
-}
-.mastera {
-  color: #FFFFFF;
-  font-size: 38px;
-  border-bottom: 1px solid #D9B987;
-  font-family: "GothamPro2", Arial, sans-serif;
-  letter-spacing: 1px;
-}
-.skill {
-  color: #D9B987;
-  font-size: 20px;
-  font-family: "GothamPro2", Arial, sans-serif;
-}
-.group {
-  color: #ffffff;
-  font-size: 28px;
-  font-family: "GothamPro2", Arial, sans-serif;
-}
-.master2 {
-  padding-top: 115px;
-  padding-left: 760px;
-}
-.master3 {
-  padding-left: 150px;
-  padding-top: 300px;
-}
-.master4 {
-  padding-left: 660px;
-  padding-top: 150px;
-}
-.master5 {
-  padding-left: 230px;
-  padding-top: 300px;
-}
-.master6 {
-  padding-left: 710px;
-  padding-top: 100px;
-}
-.photo {
-   position: absolute;
-   z-index: 0;
-   padding-left: 13px;
-}
-.photo1 {
-   position: absolute;
-   z-index: 0;
-   padding-left: 26px;
-}
-.photo2 {
-   position: absolute;
-   z-index: 0;
-   padding-left: 28px;
-}
-.block1 {
-  padding-left: 450px;
-  padding-top: 390px;
-}
-.block2 {
-   float: left;
-   padding-top: 80px;
-   padding-left: 240px;
-}
-.block3 {
-   position: relative;
-   z-index: 100;
-   padding-top: 385px;
-}
-.block5 {
-   position: relative;
-   z-index: 100;
-   padding-top: 10px;
-   padding-left: 190px;
-}
-.block6 {
-   position: relative;
-   padding-top: 270px;
-   padding-left: 810px;
-}
-.block8 {
-   position: relative;
-   float: left;
-   padding-left: 150px;
-}
-.block9 {
-   position: relative;
-   float: right;
-   padding-right: 380px;
-   padding-top: 190px;
-}
-.block10 {
-   position: relative;
-   float: left;
-   padding-left: 230px;
-   padding-top: 125px;
-}
-.block11 {
-   position: relative;
-   float: right;
-   padding-right: 330px;
-   padding-top: 170px;
-}
-.specializ1 {
-   position: relative;
-   z-index: 100;
-   padding-top: 10px;
-   padding-left: 204px;
-}
-.specializ2 {
-   position: relative;
-   z-index: 100;
-   padding-top: 10px;
-   padding-left: 237px;
-}
-.specializ3 {
-   position: relative;
-   z-index: 100;
-   padding-top: 10px;
-   padding-left: 190px;
-}
-.specializ4 {
-   position: relative;
-   z-index: 100;
-   padding-top: 10px;
-   padding-left: 190px;
-}
-.specializ5 {
-   position: relative;
-   z-index: 100;
-   padding-top: 10px;
-   padding-left: 190px;
-}
-.specializ6 {
-   position: relative;
-   z-index: 100;
-   padding-top: 10px;
-   padding-left: 190px;
-}
-.zapis3 {
-   padding-left: 600px;
-   padding-top: 1430px;
-}
+     position: relative;
+     background-color: #444341;
+     // TODO: у всех вложенных макро блоков должна быть ширина 100%
+     width: 1400px;
+     height: 7800px;
+
+    .block-slider {
+
+      &-invite1 {
+         padding-left: 100px;
+         padding-top: 80px;
+   }
+
+      &-photo {
+         position: absolute;
+         z-index: 0;
+         padding-left: 13px;
+   }
+
+      &-photo1 {
+         position: absolute;
+         z-index: 0;
+         padding-left: 26px;
+   }
+
+      &-photo2 {
+         position: absolute;
+         z-index: 0;
+         padding-left: 28px;
+   }
+
+      &-authors {
+        padding-left: 450px;
+        padding-top: 390px;
+   }
+
+      &-author1 {
+         float: left;
+         padding-top: 80px;
+         padding-left: 240px;
+   }
+
+      &-name {
+         position: relative;
+         z-index: 100;
+         padding-top: 385px;
+   }
+
+      &-author2 {
+         position: relative;
+         padding-top: 270px;
+         padding-left: 810px;
+   }
+
+      &-author3 {
+         position: relative;
+         float: left;
+         padding-left: 150px;
+   }
+
+      &-author4 {
+         position: relative;
+         float: right;
+         padding-right: 380px;
+         padding-top: 190px;
+   }
+
+      &-author5 {
+         position: relative;
+         float: left;
+         padding-left: 230px;
+         padding-top: 125px;
+   }
+
+      &-author6 {
+         position: relative;
+         float: right;
+         padding-right: 330px;
+         padding-top: 170px;
+   }
+
+      &-special1 {
+         position: relative;
+         z-index: 100;
+         padding-top: 10px;
+         padding-left: 204px;
+   }
+
+      &-special2 {
+         position: relative;
+         z-index: 100;
+         padding-top: 10px;
+         padding-left: 237px;
+   }
+
+      &-special3 {
+         position: relative;
+         z-index: 100;
+         padding-top: 10px;
+         padding-left: 190px;
+   }
+
+      &-special4 {
+         position: relative;
+         z-index: 100;
+         padding-top: 10px;
+         padding-left: 190px;
+   }
+
+      &-special5 {
+         position: relative;
+         z-index: 100;
+         padding-top: 10px;
+         padding-left: 190px;
+   }
+
+      &-special6 {
+         position: relative;
+         z-index: 100;
+         padding-top: 10px;
+         padding-left: 190px;
+   }
+
+      &-invite2 {
+         padding-left: 600px;
+         padding-top: 1430px;
+      }
+   }
 }
 
 h1 {
   padding-left: 100px;
   padding-top: 70px;
   color: #ffffff;
-  font-size: 38px;
-  line-height: 1.4;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 1px;
   font-family: "GothamPro2", sans-serif;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
-h2 {
+.clients {
   padding-left: 100px;
   padding-top: 60px;
   color: #ffffff;
   font-size: 24px;
-  line-height: 1.4;
-  font-family: "GothamPro", sans-serif;
+  line-height: 30px;
+  letter-spacing: 0px;
+  font-family: "GothamPro1", sans-serif;
+}
+
+.invite {
+  color: #ffffff;
+  padding: 10px 40px;
+  border: 2px solid #D9B987;
+  font-family: "GothamPro1", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.name {
+  color: #FFFFFF;
+  font-size: 38px;
+  border-bottom: 1px solid #D9B987;
+  font-family: "GothamPro2", Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.special {
+  color: #D9B987;
+  font-family: "GothamPro2", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.authors {
+  color: #ffffff;
+  font-family: "GothamPro2", Arial, sans-serif;
+  font-size: 38px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
