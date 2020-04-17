@@ -11,44 +11,45 @@
   font-weight: bold;
   src: url("GothaProBol.350840a7.otf") format("opentype");
 }
-header {
-  width: 1400px;
-  font-size: 14px;
-  line-height: 1.4;
-  font-family: "GothamPro1", sans-serif;
-}
-.main-menu {
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   margin: 0;
   padding-top: 5px;
   padding-bottom: 5px;
   list-style: none;
   background-color: #050505;
+  width: 1400px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "GothamPro1", sans-serif;
 }
-.main-menu li:nth-child(1) {
-  padding-left: 40px;
-}
-.main-menu li:nth-child(2) {
-  padding-left: 130px;
-}
-.main-menu li:nth-child(6) {
-  padding-left: 100px;
-}
-.main-menu li:nth-child(6) {
-  padding-left: 100px;
-}
-.main-menu li:nth-child(8) {
-  padding-left: 100px;
-}
-.main-menu a {
-  display: block;
+.menu-container a {
   padding: 8px 10px;
   color: #ffffff;
   text-decoration: none;
 }
-.main-menu li {
+.menu-container li {
   display: inline-block;
-  margin-right: 5px;
   vertical-align: middle;
+}
+.menu-container nav {
+  padding-left: 10%;
+}
+.menu-container .logo {
+  padding-left: 7%;
+}
+.menu-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.menu-item a {
+  text-transform: uppercase;
 }
 main {
   position: relative;
@@ -57,7 +58,7 @@ main {
   height: 7800px;
 }
 main .zapis1 {
-  padding-left: 80px;
+  padding-left: 100px;
   padding-top: 80px;
 }
 main .zapis2 {
@@ -67,10 +68,11 @@ main .zapis2 {
   font-family: "GothamPro1", Arial, sans-serif;
 }
 main .mastera {
-  color: #4ba0b3;
-  font-size: 28px;
+  color: #FFFFFF;
+  font-size: 38px;
   border-bottom: 1px solid #D9B987;
   font-family: "GothamPro2", Arial, sans-serif;
+  letter-spacing: 1px;
 }
 main .skill {
   color: #D9B987;
@@ -107,6 +109,16 @@ main .photo {
   z-index: 0;
   padding-left: 13px;
 }
+main .photo1 {
+  position: absolute;
+  z-index: 0;
+  padding-left: 26px;
+}
+main .photo2 {
+  position: absolute;
+  z-index: 0;
+  padding-left: 28px;
+}
 main .block1 {
   padding-left: 450px;
   padding-top: 390px;
@@ -119,13 +131,13 @@ main .block2 {
 main .block3 {
   position: relative;
   z-index: 100;
-  padding-top: 390px;
+  padding-top: 385px;
 }
 main .block5 {
   position: relative;
   z-index: 100;
   padding-top: 10px;
-  padding-left: 200px;
+  padding-left: 190px;
 }
 main .block6 {
   position: relative;
@@ -135,7 +147,7 @@ main .block6 {
 main .block8 {
   position: relative;
   float: left;
-  padding-left: 160px;
+  padding-left: 150px;
 }
 main .block9 {
   position: relative;
@@ -146,7 +158,7 @@ main .block9 {
 main .block10 {
   position: relative;
   float: left;
-  padding-left: 280px;
+  padding-left: 230px;
   padding-top: 125px;
 }
 main .block11 {
@@ -155,12 +167,48 @@ main .block11 {
   padding-right: 330px;
   padding-top: 170px;
 }
+main .specializ1 {
+  position: relative;
+  z-index: 100;
+  padding-top: 10px;
+  padding-left: 204px;
+}
+main .specializ2 {
+  position: relative;
+  z-index: 100;
+  padding-top: 10px;
+  padding-left: 237px;
+}
+main .specializ3 {
+  position: relative;
+  z-index: 100;
+  padding-top: 10px;
+  padding-left: 190px;
+}
+main .specializ4 {
+  position: relative;
+  z-index: 100;
+  padding-top: 10px;
+  padding-left: 190px;
+}
+main .specializ5 {
+  position: relative;
+  z-index: 100;
+  padding-top: 10px;
+  padding-left: 190px;
+}
+main .specializ6 {
+  position: relative;
+  z-index: 100;
+  padding-top: 10px;
+  padding-left: 190px;
+}
 main .zapis3 {
   padding-left: 600px;
   padding-top: 1430px;
 }
 h1 {
-  padding-left: 80px;
+  padding-left: 100px;
   padding-top: 70px;
   color: #ffffff;
   font-size: 38px;
@@ -169,7 +217,7 @@ h1 {
   font-weight: bold;
 }
 h2 {
-  padding-left: 80px;
+  padding-left: 100px;
   padding-top: 60px;
   color: #ffffff;
   font-size: 24px;

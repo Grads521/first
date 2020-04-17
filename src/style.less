@@ -15,55 +15,68 @@
     src: url("fonts/GothaProBol.otf") format("opentype");
 }
 
-header {
-  width: 1400px;
-  font-size: 14px;
-  line-height: 1.4;
-  font-family: "GothamPro1", sans-serif;
+.menu {
+   &-container {
+      // TODO: почитать про flex и переверстать меню по флексам
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+
+      margin: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      list-style: none;
+      background-color: #050505;
+
+      width: 1400px;
+      font-size: 14px;
+      line-height: 1.4;
+      font-family: "GothamPro1", sans-serif;
+
+      a {
+      padding: 8px 10px;
+      color: #ffffff;
+      text-decoration: none;
+   }
+
+   li {
+      display: inline-block;
+      vertical-align: middle;
+   }
+
+   nav {
+      padding-left: 10%;
+   }
 }
 
-.main-menu {
-margin: 0;
-padding-top: 5px;
-padding-bottom: 5px;
-list-style: none;
-background-color: #050505;
-li:nth-child(1) {
-padding-left: 40px;
-}
-li:nth-child(2) {
-padding-left: 130px;
-}
-li:nth-child(6) {
-padding-left: 100px;
-}
-li:nth-child(6) {
-padding-left: 100px;
-}
-li:nth-child(8) {
-padding-left: 100px;
-}
-a {
-display: block;
-padding: 8px 10px;
-color: #ffffff;
-text-decoration: none;
-}
-li {
-display: inline-block;
-margin-right: 5px;
-vertical-align: middle;
-}
+         &-container .logo {
+         padding-left: 7%;
+      }
+
+         &-info {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         padding-left: 7%;
+         padding-right: 7%;
+      }
+
+         &-item a {
+      text-transform: uppercase;
+   }
 }
 
 main {
   position: relative;
   background-color: #444341;
+  // TODO: у всех вложенных макро блоков должна быть ширина 100%
   width: 1400px;
   height: 7800px;
 .zapis1 {
-    padding-left: 80px;
-    padding-top: 80px;
+   padding-left: 100px;
+   padding-top: 80px;
 }
 .zapis2 {
   color: #ffffff;
@@ -72,10 +85,11 @@ main {
   font-family: "GothamPro1", Arial, sans-serif;
 }
 .mastera {
-  color: #4ba0b3;
-  font-size: 28px;
+  color: #FFFFFF;
+  font-size: 38px;
   border-bottom: 1px solid #D9B987;
   font-family: "GothamPro2", Arial, sans-serif;
+  letter-spacing: 1px;
 }
 .skill {
   color: #D9B987;
@@ -112,6 +126,16 @@ main {
    z-index: 0;
    padding-left: 13px;
 }
+.photo1 {
+   position: absolute;
+   z-index: 0;
+   padding-left: 26px;
+}
+.photo2 {
+   position: absolute;
+   z-index: 0;
+   padding-left: 28px;
+}
 .block1 {
   padding-left: 450px;
   padding-top: 390px;
@@ -121,19 +145,16 @@ main {
    padding-top: 80px;
    padding-left: 240px;
 }
-
 .block3 {
    position: relative;
    z-index: 100;
-   padding-top: 390px;
-}
-.block4 {
+   padding-top: 385px;
 }
 .block5 {
    position: relative;
    z-index: 100;
    padding-top: 10px;
-   padding-left: 200px;
+   padding-left: 190px;
 }
 .block6 {
    position: relative;
@@ -143,7 +164,7 @@ main {
 .block8 {
    position: relative;
    float: left;
-   padding-left: 160px;
+   padding-left: 150px;
 }
 .block9 {
    position: relative;
@@ -154,7 +175,7 @@ main {
 .block10 {
    position: relative;
    float: left;
-   padding-left: 280px;
+   padding-left: 230px;
    padding-top: 125px;
 }
 .block11 {
@@ -163,6 +184,42 @@ main {
    padding-right: 330px;
    padding-top: 170px;
 }
+.specializ1 {
+   position: relative;
+   z-index: 100;
+   padding-top: 10px;
+   padding-left: 204px;
+}
+.specializ2 {
+   position: relative;
+   z-index: 100;
+   padding-top: 10px;
+   padding-left: 237px;
+}
+.specializ3 {
+   position: relative;
+   z-index: 100;
+   padding-top: 10px;
+   padding-left: 190px;
+}
+.specializ4 {
+   position: relative;
+   z-index: 100;
+   padding-top: 10px;
+   padding-left: 190px;
+}
+.specializ5 {
+   position: relative;
+   z-index: 100;
+   padding-top: 10px;
+   padding-left: 190px;
+}
+.specializ6 {
+   position: relative;
+   z-index: 100;
+   padding-top: 10px;
+   padding-left: 190px;
+}
 .zapis3 {
    padding-left: 600px;
    padding-top: 1430px;
@@ -170,7 +227,7 @@ main {
 }
 
 h1 {
-  padding-left: 80px;
+  padding-left: 100px;
   padding-top: 70px;
   color: #ffffff;
   font-size: 38px;
@@ -180,7 +237,7 @@ h1 {
 }
 
 h2 {
-  padding-left: 80px;
+  padding-left: 100px;
   padding-top: 60px;
   color: #ffffff;
   font-size: 24px;
