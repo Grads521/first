@@ -15,6 +15,11 @@
     src: url("fonts/GothaProBol.otf") format("opentype");
 }
 
+body {
+
+
+}
+
 .menu {
    &-container {
       // TODO: почитать про flex и переверстать меню по флексам
@@ -22,7 +27,6 @@
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
-
 
       margin: 0;
       padding-top: 5px;
@@ -35,36 +39,36 @@
       line-height: 1.4;
       font-family: "GothamPro1", sans-serif;
 
-      a {
+         a {
       padding: 8px 10px;
       color: #ffffff;
       text-decoration: none;
    }
 
-   li {
+         .block-slider-logo {
+      flex-grow: 1;
+   }
+
+         .logo{
+      flex-grow: 1;
+      // padding-left: 7%;
+   }
+
+         nav {
+      flex-grow: 2;
+   }
+         li {
       display: inline-block;
       vertical-align: middle;
    }
-
-   nav {
-      padding-left: 10%;
-   }
 }
-
-         &-container .logo {
-         padding-left: 7%;
-      }
-
-         &-info {
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         padding-left: 7%;
-         padding-right: 7%;
-      }
 
          &-item a {
       text-transform: uppercase;
+   }
+
+         &-info {
+      flex-grow: 1;
    }
 }
 
@@ -72,7 +76,7 @@ main {
      position: relative;
      background-color: #444341;
      // TODO: у всех вложенных макро блоков должна быть ширина 100%
-     width: 1400px;
+     width: 100%;
      height: 7800px;
 
     .block-slider {
@@ -131,21 +135,21 @@ main {
 
       &-author4 {
          position: relative;
-         float: right;
-         padding-right: 380px;
-         padding-top: 190px;
+         float: left;
+         padding-left: 200px;
+         padding-top: 180px;
    }
 
       &-author5 {
          position: relative;
          float: left;
-         padding-left: 230px;
-         padding-top: 125px;
+         // padding-right: 230px;
+         // padding-top: 125px;
    }
 
       &-author6 {
          position: relative;
-         float: right;
+         float: left;
          padding-right: 330px;
          padding-top: 170px;
    }

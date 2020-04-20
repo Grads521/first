@@ -31,30 +31,29 @@
   color: #ffffff;
   text-decoration: none;
 }
+.menu-container .block-slider-logo {
+  flex-grow: 1;
+}
+.menu-container .logo {
+  flex-grow: 1;
+}
+.menu-container nav {
+  flex-grow: 2;
+}
 .menu-container li {
   display: inline-block;
   vertical-align: middle;
 }
-.menu-container nav {
-  padding-left: 10%;
-}
-.menu-container .logo {
-  padding-left: 7%;
-}
-.menu-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 7%;
-  padding-right: 7%;
-}
 .menu-item a {
   text-transform: uppercase;
+}
+.menu-info {
+  flex-grow: 1;
 }
 main {
   position: relative;
   background-color: #444341;
-  width: 1400px;
+  width: 100%;
   height: 7800px;
 }
 main .block-slider-invite1 {
@@ -102,19 +101,17 @@ main .block-slider-author3 {
 }
 main .block-slider-author4 {
   position: relative;
-  float: right;
-  padding-right: 380px;
-  padding-top: 190px;
+  float: left;
+  padding-left: 200px;
+  padding-top: 180px;
 }
 main .block-slider-author5 {
   position: relative;
   float: left;
-  padding-left: 230px;
-  padding-top: 125px;
 }
 main .block-slider-author6 {
   position: relative;
-  float: right;
+  float: left;
   padding-right: 330px;
   padding-top: 170px;
 }
