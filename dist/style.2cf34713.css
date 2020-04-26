@@ -195,6 +195,7 @@ main .block-slider-special6 {
 main .block-slider-invite2 {
   padding-top: 2300px;
   padding-left: 600px;
+  margin-bottom: 130px;
 }
 main .block-slider-words1 {
   padding-top: 130px;
@@ -286,7 +287,7 @@ main .block-slider-invite3 {
   margin-top: 80px;
   text-align: center;
 }
-main .block-slider-history {
+main .block-slider-history-title {
   padding-top: 130px;
   text-align: center;
 }
@@ -304,6 +305,30 @@ main .block-slider-feedback {
 }
 main .block-slider-feedback-name {
   margin-top: 30px;
+}
+main .block-slider-steps-title {
+  padding-top: 130px;
+  text-align: center;
+}
+main .block-slider-steps {
+  margin-top: 80px;
+}
+main .block-slider-step1-title1 {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+main .block-slider-step1-title2 {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+main .block-slider-step1-info {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+main .block-slider-step-photo {
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
 }
 main .preview-next-photo {
   display: flex;
@@ -431,7 +456,7 @@ main .decor-offer-name {
   letter-spacing: 1px;
   border-bottom: 2px solid #D9B987;
 }
-main .decor-history {
+main .decor-history-title {
   color: black;
   font-family: "GothamPro2", Arial, sans-serif;
   font-size: 28px;
@@ -469,6 +494,45 @@ main .decor-info-feedback-name {
   letter-spacing: 0px;
   font-family: "GothamPro1", sans-serif;
 }
+main .decor-steps-title {
+  color: white;
+  font-family: "GothamPro2", Arial, sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+main .decor-step1 {
+  border-top: 2px solid #D9B987;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+main .decor-step-title1 {
+  color: #D9B987;
+  font-family: "GothamPro2", Arial, sans-serif;
+  font-size: 38px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+main .decor-step-title2 {
+  color: #ffffff;
+  font-family: "GothamPro2", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+main .decor-step-info {
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-family: "GothamPro1", sans-serif;
+}
+main .decor-step1-text {
+  position: absolute;
+}
 h1 {
   padding-left: 100px;
   padding-top: 70px;
@@ -489,7 +553,6 @@ h3 {
   text-align: center;
 }
 .preview {
-  margin-top: 130px;
   position: relative;
   background-color: #ffe0c9;
   width: 100%;
@@ -517,6 +580,14 @@ h3 {
   background-color: #FF5C1010;
   width: 100%;
   height: 740px;
+  list-style: none;
+  z-index: 100;
+}
+.steps {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 1575px;
   list-style: none;
   z-index: 100;
 }
