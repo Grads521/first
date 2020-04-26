@@ -70,7 +70,7 @@ main {
   position: relative;
   background-color: #444341;
   width: 100%;
-  height: 11800px;
+  height: 11710px;
   list-style: none;
 }
 main .block-slider-clients {
@@ -813,6 +813,14 @@ footer .decor-address {
 footer .decor-photo {
   display: flex;
   margin-right: 100px;
+}
+footer .decor-name1 {
+  color: white;
+  font-family: "GothamPro1", Arial, sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
 }
 
 
