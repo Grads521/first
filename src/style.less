@@ -30,7 +30,6 @@ header {
    padding-bottom: 5px;
    list-style: none;
    background-color: #050505;
-   border: 1px solid #ffff00;
 
    width: 100%;
    font-size: 14px;
@@ -97,7 +96,7 @@ main {
      // TODO: у всех вложенных макро блоков должна быть ширина 100%
 
      width: 100%;
-     height: 8400px;
+     height: 11800px;
 
      list-style: none;
 
@@ -108,7 +107,7 @@ main {
         padding-top: 60px;
       }
 
-      &-invite1 {
+      &-main-invite1 {
          padding-left: 100px;
          padding-top: 80px;
       }
@@ -244,7 +243,7 @@ main {
          margin-left: 193px;
       }
 
-      &-invite2 {
+      &-main-invite2 {
          padding-top: 2300px;
          padding-left: 600px;
          margin-bottom: 130px;
@@ -339,7 +338,7 @@ main {
       &-offer-photo {
         text-align: center;
       }
-      &-invite3 {
+      &-overview-invite {
         margin-top: 80px;
         text-align: center;
       }
@@ -369,15 +368,15 @@ main {
       &-steps {
          margin-top: 80px;
       }
-      &-step1-title1 {
+      &-step-title1 {
         margin-top: 30px;
         margin-left: 20px;
       }
-      &-step1-title2 {
+      &-step-title2 {
         margin-top: 10px;
         margin-left: 20px;
       }
-      &-step1-info {
+      &-step-info {
         margin-top: 10px;
         margin-left: 20px;
       }
@@ -385,6 +384,93 @@ main {
         float: right;
         margin-top: 30px;
         margin-right: 20px;
+      }
+      &-step2 {
+        margin-top: 350px;
+      }
+      &-step3 {
+        margin-top: 360px;
+      }
+      &-step-border {
+        margin-top: 350px;
+      }
+      &-steps-invite {
+        margin-top: 80px;
+        text-align: center;
+      }
+      &-inside-title {
+        padding-top: 130px;
+        text-align: center;
+      }
+      &-inside-photo {
+        margin-top: 80px;
+        text-align: center;
+        margin-bottom: 130px;
+      }
+      &-faq-title {
+        padding-top: 120px;
+        text-align: center;
+      }
+      &-faq1 {
+        margin-top: 70px;
+      }
+      &-faq-step-title {
+        margin-top: 15px;
+      }
+      &-faq-info {
+        margin-top: 40px;
+      }
+      &-faq2 {
+        margin-top: 230px;
+      }
+      &-faq3 {
+        margin-top: 60px;
+      }
+      &-faq4 {
+        margin-top: 60px;
+      }
+      &-faq5 {
+        margin-top: 60px;
+      }
+      &-faq-border {
+        margin-top: 60px;
+      }
+      &-contact {
+        &-info {
+          padding-top: 130px;
+          margin-left: 200px;
+          margin-right: 600px;
+        }
+        &-title {
+          margin-top: 60px;
+          margin-left: 50px;
+        }
+        &-phone {
+          margin-top: 60px;
+          margin-left: 50px;
+        }
+        &-mail {
+          margin-top: 10px;
+          margin-left: 50px;
+        }
+        &-address {
+          margin-top: 20px;
+          margin-left: 50px;
+        }
+        &-worktime {
+          margin-top: 30px;
+          margin-left: 50px;
+        }
+        &-photo {
+          margin-top: 60px;
+          margin-left: 50px;
+        }
+        &-photo2 {
+          margin-left: 20px;
+        }
+        &-photo3 {
+          margin-left: 20px;
+        }
       }
    } // Сдвиг
 
@@ -482,6 +568,9 @@ main {
         letter-spacing: 0px;
         text-transform: uppercase;
       }
+      &-overview-address {
+         display: flex;
+      }
       &-address {
         width: 100%;
         font-size: 14px;
@@ -536,7 +625,7 @@ main {
         color: black;
         font-size: 16px;
         line-height: 25px;
-        letter-spacing: 1px;
+        letter-spacing: 0px;
         font-family: "GothamPro1", sans-serif;
 
       &-master-name {
@@ -566,7 +655,7 @@ main {
         letter-spacing: 0px;
         text-transform: uppercase;
       }
-      &-step1  {
+      &-step  {
         border-top: 2px solid #D9B987;
         //border-bottom: 2px solid #D9B987;
         margin-left: 180px;
@@ -592,11 +681,93 @@ main {
         color: white;
         font-size: 16px;
         line-height: 25px;
-        letter-spacing: 1px;
+        letter-spacing: 0px;
         font-family: "GothamPro1", sans-serif;
       }
-      &-step1-text {
+      &-step-text {
         position: absolute;
+      }
+      &-border {
+        border-top: 2px solid #D9B987;
+      }
+      &-inside-title {
+        color: black;
+        font-family: "GothamPro2", Arial, sans-serif;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+      }
+      &-faq-title {
+        color: white;
+        font-family: "GothamPro2", Arial, sans-serif;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+      }
+      &-faq {
+        border-top: 1px solid #D9B987;
+        //border-bottom: 2px solid #D9B987;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      &-faq-step-title {
+        color: #ffffff;
+        font-family: "GothamPro2", Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0px;
+      }
+      &-faq-info {
+        color: white;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0px;
+        font-family: "GothamPro1", sans-serif;
+      }
+      &-contact {
+        &-title {
+          color: #D9B987;
+          font-family: "GothamPro2", Arial, sans-serif;
+          font-size: 28px;
+          line-height: 40px;
+          letter-spacing: 0px;
+          text-transform: uppercase;
+        }
+        &-phone {
+          color: #ffffff;
+          font-family: "GothamPro2", Arial, sans-serif;
+          text-transform: uppercase;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0px;
+        }
+        &-mail {
+          color: white;
+          font-size: 16px;
+          line-height: 25px;
+          letter-spacing: 0px;
+          font-family: "GothamPro1", sans-serif;
+        }
+        &-address {
+          color: white;
+          font-size: 16px;
+          line-height: 25px;
+          letter-spacing: 0px;
+          font-family: "GothamPro1", sans-serif;
+        }
+        &-worktime {
+          color: white;
+          font-size: 16px;
+          line-height: 25px;
+          letter-spacing: 0px;
+          font-family: "GothamPro1", sans-serif;
+        }
+        &-photo {
+          display: flex;
+        }
       }
    }
 }
@@ -640,10 +811,6 @@ h3 {
    z-index: 100;
 }
 
-.address {
-   display: flex;
-}
-
 .menu-offer {
   display: flex;
   align-items: center;
@@ -665,4 +832,82 @@ h3 {
   height: 1575px;
   list-style: none;
   z-index: 100;
+}
+
+.inside {
+  position: relative;
+  background-color: rgba(102, 99, 99, 0.84);
+  width: 100%;
+  height: 920px;
+  list-style: none;
+  z-index: 100;
+}
+
+.faq {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 835px;
+  list-style: none;
+  z-index: 100;
+}
+
+.contact {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 730px;
+  list-style: none;
+  z-index: 100;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  list-style: none;
+  background-color: #050505;
+
+  //display: flex;
+  //flex-direction: row;
+  //align-items: center;
+  //justify-content: flex-start;
+
+  .address {
+    margin-left: 100px;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .block-slider {
+    &-footer-photo1 {
+      margin-right: 20px;
+    }
+    &-footer-photo2 {
+      margin-right: 20px;
+    }
+    &-address {
+      margin-right: 10px;
+    }
+  }
+
+  .decor {
+    display: flex;
+    //border: 1px solid green;
+      &-address {
+        color: #FFFFFF;
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.4;
+        font-family: "GothamPro1", sans-serif;
+        align-self: center;
+        flex-grow: 2;
+        //border: 1px solid yellow;
+      }
+      &-photo {
+        display: flex;
+        //border: 1px solid red;
+        //float: right;
+        margin-right: 100px;
+      }
+  }
 }
